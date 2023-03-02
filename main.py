@@ -21,7 +21,7 @@ screen_height = root.winfo_screenheight()
 window_x = int((screen_width / 2) - (window_width / 2))
 window_y = int((screen_height / 2) - (window_height / 2))
 root.geometry(f'+{window_x}+{window_y}')
-image = Image.open("Images/bootmain.png")
+image = Image.open("bootmain.png")
 new_size = (510,90)
 imager = image.resize(new_size)
 imagern = ImageTk.PhotoImage(imager)
@@ -203,7 +203,7 @@ def portal(username, password, account_uinf):
         continue_button = Button(settings_frame, text='Close', font=("Helivetica 18 bold"), command=settings_frame.destroy, bg='gray85', fg="black", borderwidth=-0)
         continue_button.pack(side=BOTTOM, padx=10, pady=10)
 
-    img = Image.open("Images/defaulticon.png")
+    img = Image.open("defaulticon.png")
     width, height = 50, 50
     img = img.resize((width, height), Image.ANTIALIAS)
     photo = ImageTk.PhotoImage(img)
